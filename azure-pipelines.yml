@@ -10,5 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- bash: yarn
+
+- bash: yarn build
+
 - publish: $(System.DefaultWorkingDirectory)/dist
   artifact: Website
