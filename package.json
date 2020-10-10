@@ -6,13 +6,14 @@
   "author": "nishant <nishant.singh87@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build-markdown" : "node scripts/build-markdown.js",
-    "build-homepage" : "node scripts/build-homepage.js",
-    "clean" : "node scripts/clean.js",
-    "build" : "npm run clean && npm run build-markdown && npm run build-homepage"
+    "build-markdown": "node scripts/build-markdown.js",
+    "build-homepage": "node scripts/build-homepage.js",
+    "clean": "node scripts/clean.js",
+    "build": "npm run clean && npm run build-markdown && npm run build-homepage"
   },
   "dependencies": {
     "glob": "^7.1.6",
+    "highlight.js": "^10.2.1",
     "remarkable": "^2.0.1"
   }
 }
