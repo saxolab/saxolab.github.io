@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+</head>
+<body>
+<div id="json-container"></div>
+
+<style>
+  #json-container {
+    width: 50%;
+    height: 50%;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+</style>
+<script>
+  // Courtesy : https://stackoverflow.com/a/57059229/1065020
+  require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' }});
+  window.MonacoEnvironment = { getWorkerUrl: () => proxy };
+
+  let proxy = URL.createObjectURL(new Blob([`
+	self.MonacoEnvironment = {
+		baseUrl: 'https://unpkg.com/monaco-editor@latest/min/'
+	};
+	importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
+`], { type: 'text/javascript' }));
+
+  require(["vs/editor/editor.main"], function () {
+    let editor = monaco.editor.create(document.getElementById('json-container'), {
+      value: `{
+  "name" : "nishant",
+  "id" : 212,
+  "spouse" : null,
+  "location": {
+    "country" : "India",
+    "cordinates": [0, 1]
+  }
+}`,
+      language: 'json',
+      theme: 'vs-dark'
+    });
+  });
+  console.log("Courtesy : https://stackoverflow.com/a/57059229/1065020")
+</script>
+
+</body>
+</html>
