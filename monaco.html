@@ -5,9 +5,10 @@
 </head>
 <body>
 <div id="json-container"></div>
+<div id="cs-container"></div>
 
 <style>
-  #json-container {
+  #json-container, #cs-container {
     width: 50%;
     height: 50%;
     min-width: 500px;
@@ -29,9 +30,17 @@
 	importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
 `], { type: 'text/javascript' }));
 
-  require(["vs/editor/editor.main"], function () {
-    let editor = monaco.editor.create(document.getElementById('json-container'), {
-      value: `{
+  function createEditor(element, snippet, language = 'json') {
+    require(["vs/editor/editor.main"], function () {
+      let editor = monaco.editor.create(element, {
+        value: snippet,
+        language: language,
+        theme: 'vs-dark'
+      });
+    });
+  }
+
+  createEditor(document.getElementById('json-container'), `{
   "name" : "nishant",
   "id" : 212,
   "spouse" : null,
@@ -39,11 +48,18 @@
     "country" : "India",
     "cordinates": [0, 1]
   }
-}`,
-      language: 'json',
-      theme: 'vs-dark'
-    });
-  });
+}`, 'json');
+
+  createEditor(document.getElementById('cs-container'), `new {
+  name = "Nishant",
+  id = 212,
+  location = new {
+    country = "India",
+    cordinates = new []{0, 1}
+  }
+}`, 'csharp');
+
+
   console.log("Courtesy : https://stackoverflow.com/a/57059229/1065020")
 </script>
 
