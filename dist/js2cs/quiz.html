@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" sizes="8x8" href="data:image/x-icon;base64,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">
+  <meta charset="UTF-8">
+  <title>
+    quiz
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/highlight.js/8.4.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/8.4.0/styles/googlecode.min.css">
+</head>
+<body>
+<p>xTo know</p>
+<ul>
+<li>what is inside a solution file ?</li>
+<li>what is inside an assembly file ? is it ILC or binary ?</li>
+</ul>
+<ul>
+<li><p>What is CLR</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"> common language runtime, anologues of JVM. It is the Just in time compiler that intreprets the intermediate level code into machine code. So any machine that has a CLR can run compiled .NET code (ILC) </span></li>
+</ul></li>
+<li><p>What is assembly ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">analygous of Jar, contains runnable libs built from a project</span></li>
+</ul></li>
+<li><p>Is assembly one per namespace ?</p></li>
+<li><p>What is a solution file ? Is it suppose to be specific to a project ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">it can contain multiple project</span></li>
+</ul></li>
+<li><p>What is ILC ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">intermediate language code, like bytecode C# is compiled to ILC and CLR interprets the ILC at runtime</span></li>
+</ul></li>
+<li><p>What is the naming convention for constants in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Pascal case e.g. int MaxValueSalary = 20;</span></li>
+</ul></li>
+<li><p>How to decalre a float variable in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">float val = 0.2f; Just like java again</span></li>
+</ul></li>
+<li><p>What is decimal type in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Float is 4 bytes, double is 8 bytes and decimal is 16 bytes representation of real numbers in C#</span></li>
+</ul></li>
+<li><p>What is the naming convention for methods in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">PascalCase unlike camel case in Java</span></li>
+</ul></li>
+<li><p>Just like packages in Java, are namespace cosntrained by dir structure from project root ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">No, name space are independent from dir structure</span></li>
+</ul></li>
+<li><p>What are  <strong>virtual method</strong>s ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">in C#, overriding depends on the type of reference teh variable holds. Unlike java, a supser class reference can also inovke overriden version of method, , if super class declares the methods using <code>virtual</code> keyword</span></li>
+</ul></li>
+<li><p>Just like java.lang names space, System name space is auto imported in C#. True/False ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">In C# we have to explicitly declare <code>using Systaem;</code> e.g if we need to use <code>Console.WriteLine('');</code>. False </span></li>
+</ul></li>
+<li><p>What is the naming convention for interfaces in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Interfaces are camel case, prefixed with an &quot;I&quot;. e.g. IComparable</span></li>
+</ul></li>
+<li><p>When to use camelCase vs TitleCase in C#?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">camel case only for private and local variables. Everything else is Title Case</span></li>
+</ul></li>
+<li><p>How can you make sure C# throws error when a variable overflow ?</p></li>
+<li><p>What is a <code>checked</code> block in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">A checked block throws exception if overflow occurs for a vairbale within the block scope</span></li>
+</ul></li>
+<li><p>Name all the 9 primitive types in C#.</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">bool, byte, char, short, int, long, float, double, decimal</span></li>
+</ul></li>
+<li><p>What is BCL ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Base class library is the standard library that comes with C#</span></li>
+</ul></li>
+<li><p>What is GAC ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Global assembly cache : shared libs and version on every machine that has a CLR installed. (think of globally installed npm modules). It is recommened to use shared only when required. Is it cache of Nugets ? or does the lib mean more thant Nuget ?</span></li>
+</ul></li>
+<li><p>What is CoreCLR ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">.NET Core virtual machine, i. e. Version of CLR that comes with .NET core is called CoreCLR</span></li>
+</ul></li>
+<li><p>What is CoreFX</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Set of libraries that come with .NET Core</span></li>
+</ul></li>
+<li><p>What is Roslyn ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">C# compiler used by <code>dotnet</code> tool. Compiles C# to Intermediate Level Code. Also comes as a nuget</span></li>
+</ul></li>
+<li><p>What is <strong>LINQ</strong></p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Language INtegrated Quries, indroduced in C#3.0.  It adds support for declarative coding</span></li>
+</ul></li>
+<li><p>Name all the types in C#.</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">class, struct, enum, interface, or delegate.</span></li>
+</ul></li>
+<li><p>What is the type of int in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">struct, class is Int32</span></li>
+</ul></li>
+<li><p>How many keywords are there in C#</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Little over hundred</span></li>
+</ul></li>
+<li><p>What are contextual keyword in C# ?</p>
+<p><span style="color: rgba(0,0,0,0.1)">Keywords that are not reserved words. They have meaning in a context onlyw. E.g. Delegate</span></p></li>
+<li><p>Every expression has a type in c# ? True/False ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">True, both variables and expressions have a type</span></li>
+</ul></li>
+<li><p>Boolean, Decimal e.t.c are implemented as Classes, True/False ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">False, they are implemented as structs</span></li>
+</ul></li>
+<li><p>What is difference between value types and reference types ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Reference types are allocated space in heap while value types in stack</span></li>
+</ul></li>
+<li><p>What is the result of following :</p>
+<pre><code class="language-c#"><span class="hljs-keyword">object</span> a = <span class="hljs-number">21</span>;
+<span class="hljs-keyword">object</span> b = <span class="hljs-number">22</span>;
+Console.WriteLine(<span class="hljs-number">21</span> + <span class="hljs-number">22</span>);
+</code></pre></li>
+<li><p><strong>What is the super class of Value types and Reference Types</strong></p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">System.Object</span></li>
+</ul></li>
+<li><p>When we say <code>type</code>, is it same as <code>class</code> in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">No, type are like class, interface, deleegate, struct, enum</span></li>
+</ul></li>
+<li><p>On a 64 bit machine, adding of int will be faster than decimal. True/False ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">False (though unintuitive)</span></li>
+</ul></li>
+<li><p>What is a literal value ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">notation that represetnts a fixed value, integer, float, binary, hexadecimal, char, string, boolean</span></li>
+</ul></li>
+<li><p>What are <strong>verbatim strings</strong> in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">used to ignore escapre characters in stings , e.g. @&quot;c:\fileone\file-2&quot; is equivalent to “c:\fileone\file2” </span></li>
+</ul></li>
+<li><p>What is meaning of <code>@</code> keyword in c# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">When prefixed to a string, makes it verbatim</span></li>
+</ul></li>
+<li><p>What is uint type ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">unsigned integer (+ve values only)</span></li>
+</ul></li>
+<li><p>What is the difference between number literals that start with <code>0b</code> vs <code>0x</code></p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">0b is binary and 0x is hexadecimal</span></li>
+</ul></li>
+<li><p>Which is larger in C#, <code>double.MaxValue</code> or <code>decimal.maxValue</code></p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">doubles are not accuratel and double.MaxValue is larger</span></li>
+</ul></li>
+<li><p>Whent to use <code>double</code> vs <code>decimal</code> ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">doubles should not be used when comparison is rquired. Decimal should be used for comparisons </span></li>
+</ul></li>
+<li><p>What is wrong with below code ?</p>
+<pre><code class="language-c#"><span class="hljs-function">pubilic <span class="hljs-keyword">bool</span> <span class="hljs-title">isSalaryCorrect</span>(<span class="hljs-params">employee, <span class="hljs-keyword">double</span> approvedSalary</span>)</span>{
+  <span class="hljs-keyword">double</span> salaray = employee.annualSalary/<span class="hljs-number">12</span>;
+  <span class="hljs-keyword">return</span> approvedSalary == salaray;
+}
+</code></pre>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">doubles should not be used when we need to compare. in such cases decimal should be used.</span></li>
+</ul></li>
+<li><p>What is the literal for long ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">L, e.g. 12121L, without L the number becomses an integer</span></li>
+</ul></li>
+<li><ul>
+<li><span style="color: rgba(0,0,0,0.1)">No, only for local variables</span></li>
+</ul></li>
+<li><p>What is <code>default()</code> operator ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">to get default value of types e.g. default(DateTime), default(int)</span></li>
+</ul></li>
+<li><p>Can we use var to declare public variable ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">no only local variable</span></li>
+</ul></li>
+<li><p>Can we disable null reference pointer in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">yes c# allows enabling/disabling null pointer reference at projec tor file level</span></li>
+</ul></li>
+<li><p>What is the <code>1.2M</code> literal mean ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">M literal is for decimal <code>4.32m</code> an d<code>1.2M</code> both mean decimal</span></li>
+</ul></li>
+<li><p>How to write a template string in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code><!--Contents-->quot;{variableOne} is one and {variableTwo} is two&quot;</code>/span&gt;</li>
+</ul></li>
+<li><p>How to read a line in C# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>string input = Console.ReadLine()</code></span></li>
+</ul></li>
+<li><p>Which exceptions indicates that a platform lacks the feature of C# we tried to use</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">PlatformNoSupportedException`</span></li>
+</ul></li>
+<li><p>What is sbyte type ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Signed Byte. <code>byte</code> stores 0-255 while <code>sbyte</code> stores -128 to 127 </span></li>
+</ul></li>
+<li><p>What will be result of following :</p>
+<pre><code class="language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> DateTime? getADay(<span class="hljs-keyword">bool</span> today){
+  DateTime result = <span class="hljs-literal">null</span>;
+  <span class="hljs-keyword">if</span>(today){
+      result = DateTime.Today;
+  } <span class="hljs-keyword">else</span>{
+      result = <span class="hljs-keyword">new</span> DateTime();
+  }
+  <span class="hljs-keyword">return</span> result;
+}
+</code></pre>
+<p><span style="color: rgba(0,0,0,0.1)">DateTime is non nullable </span></p></li>
+<li><p>What is the difference between casting and converting in C#</p>
+<p><span style="color: rgba(0,0,0,0.1)">when casting double to int, casting will remove teh part after <code>.</code> while <code>Sytate.Convert.ToInt32()</code> will round off </span></p></li>
+<li><p>How can you roundof a decimal value into a long value ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">System.Convert.ToInt64(1.5m);</span></li>
+</ul></li>
+<li><p>How can you roundof a decimal value into a long value ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">System.Convert.ToInt64(1.5m);</span></li>
+</ul></li>
+<li><p>Show two different ways of coverting string “true” to boolean variable</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>Boolean.Parse(&quot;true&quot;)</code>, <code>System.Convert.ToBoolean(&quot;true&quot;)</code></span></li>
+</ul></li>
+<li><p>How can you create and parse Base64 strings in c# ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">System.Convert.ToFase64String and System.Convert.FromBase64String</span></li>
+</ul></li>
+<li></li>
+<li><p>What happends if overrides is used without <code>virtual</code> in super class ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">compile error</span></li>
+</ul></li>
+<li><p>Rewrite the following using shorter syntax of switch case</p>
+<pre><code class="language-c#"><span class="hljs-keyword">switch</span>(option){
+  <span class="hljs-keyword">case</span> <span class="hljs-number">3</span> : 
+      Console.WriteLine(<span class="hljs-string">&quot;it is three&quot;</span>);
+      <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span> : 
+      Console.WriteLine(<span class="hljs-string">&quot;it is one&quot;</span>);
+      <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span> :
+      Console.WriteLine(<span class="hljs-string">&quot;neighter three or one&quot;</span>);
+      <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+<ul>
+<li><div style="opacity: 0.1">
+<pre><code>Console.WriteLine(option <span class="hljs-keyword">switch</span>{
+  <span class="hljs-number">3</span> =&gt; <span class="hljs-string">&quot;it is three&quot;</span>,
+  <span class="hljs-number">1</span> =&gt; <span class="hljs-string">&quot;it is one&quot;</span>,
+  _ =&gt; <span class="hljs-string">&quot;neighter three or one&quot;</span>,
+});
+</code></pre>
+</div></li>
+</ul></li>
+<li><p>How do you create a new solution with dotnet command ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>dotnet new sln -o solution-name</code></span></li>
+</ul></li>
+<li><p>How can you add a <other> project to <current> as reference library ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>dotnet add &lt;current&gt;.csproj reference path/to/&lt;other&gt;.csproj</code></span></li>
+</ul></li>
+<li><p>What is the difference between <code>[Fact]</code> and <code>[Theory]</code> in XUnit test file ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Fact is alwasy right, Theory is right for a set of data</span></li>
+</ul></li>
+<li><p>What is the difference between <code>String</code> and <code>string</code> ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">string is a reference to Syste.String. They do exact same thing. String needs System namespace to be imported</span></li>
+</ul></li>
+<li><p>what is an assembly ? is it different from a Nuget package ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Package can contain multiple assemblies. Assembly are dll files stored on disk that can be used as class libraries.</span></li>
+</ul></li>
+<li><p>What is the C# class for <code>int</code> <code>float</code>, <code>short</code> <code>decimal</code>and <code>long</code>?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>System.Int32</code> - int, <code>System.Int16</code> - short, <code>Syste.Int64</code> -long, <code>Syste.Decimal</code> -decimal, <code>System.Single</code> - float, </span></li>
+</ul></li>
+<li><p>What is .NET standard ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">A standard that any C# platform has to comply to . Deines what assemblies can be used on any specific platform.</span></li>
+</ul></li>
+<li><p>How to create a Nuget package from the current classlib project ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>dotnet pack</code></span></li>
+</ul></li>
+<li><p>How to download the dependencies of a project ?</p></li>
+<li><p><span style="color: rgba(0,0,0,0.1)"><code>dotnet restore</code></span></p></li>
+<li><p>How to compile of a project ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)"><code>dotnet build</code></span></li>
+</ul></li>
+<li><p>What is solution file used for ? Can a project work without a solution file ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Yes, it is optional. It is used for working with multipe projects. e.g. load muliple projects in IDE by loading the solutions file or run a <code>dotnet build</code> command for multiple project by running in solution directory. It can also be configured for building/deploying multiple projects at once</span></li>
+</ul></li>
+<li><p>Does async method run in a different thread to ensure parallelism ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">no, asyn await do not create additional threads</span></li>
+</ul></li>
+<li><p>Which name spaces contain IO related classes ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">System and System.IO</span></li>
+</ul></li>
+<li><p>How can I use the <code>as</code> expression to typecheck and typecast as the same time ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">if(obj is Person that)</span></li>
+</ul></li>
+<li><p>Can same attribute be applied on a type more than once ?</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Yes, if we want it with different parameters. e.g. <code>[Conditional(&quot;DEBUG&quot;), Conditional(&quot;TEST1&quot;)] void TraceMethod(){}</code></span></li>
+</ul></li>
+<li><p>Consider following :</p>
+<pre><code class="language-c#"><span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+                    
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-title">IList</span>&lt;<span class="hljs-title">string</span>&gt; processed</span> = <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt;();
+    
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)</span>
+    {
+        <span class="hljs-keyword">var</span> input = GetInputs().Select(Transform);
+        Console.WriteLine(<span class="hljs-string">&quot;Before : &quot;</span> + <span class="hljs-keyword">string</span>.Join(<span class="hljs-string">&quot;, &quot;</span>, processed));
+        Console.WriteLine(<span class="hljs-string">&quot;Result : &quot;</span> + <span class="hljs-keyword">string</span>.Join(<span class="hljs-string">&quot;, &quot;</span>, input));
+        Console.WriteLine(<span class="hljs-string">&quot;After  : &quot;</span> + <span class="hljs-keyword">string</span>.Join(<span class="hljs-string">&quot;, &quot;</span>, processed));
+    }
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-title">IEnumerable</span>&lt;<span class="hljs-title">string</span>&gt; <span class="hljs-title">GetInputs</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> List&lt;<span class="hljs-keyword">string</span>&gt;(){<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;three&quot;</span>};}
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> <span class="hljs-title">Transform</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> input</span>)</span>{ 
+        <span class="hljs-keyword">string</span> output = <span class="hljs-string"><!--Contents-->quot;processed-<span class="hljs-subst">{input}</span>&quot;</span>;
+        processed.Add(output);
+        <span class="hljs-keyword">return</span> output;
+    }
+}
+</code></pre>
+<p>The output for this program is</p>
+<pre><code>Before : 
+Result : processed-<span class="hljs-literal">one</span>, processed-<span class="hljs-literal">two</span>, processed-<span class="hljs-literal">three</span>
+After  : processed-<span class="hljs-literal">one</span>, processed-<span class="hljs-literal">two</span>, processed-<span class="hljs-literal">three</span>
+</code></pre>
+<p>Explain what might be going on here.</p>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">Linq defers  the funtion execution till result is consumed. So Select is not right place for side effects.</span></li>
+</ul></li>
+</ul>
+<ul>
+<li><p>What will be result of following :</p>
+<pre><code class="language-c#"><span class="hljs-keyword">using</span> System;  
+  
+<span class="hljs-keyword">class</span> <span class="hljs-title">SuperClass</span>  
+{     
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">methodOne</span>(<span class="hljs-params"></span>)</span>  
+  {  
+    Console.WriteLine(<span class="hljs-string">&quot;method one from super class&quot;</span>);  
+  }  
+  
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">methodTwo</span>(<span class="hljs-params"></span>)</span>  
+  {  
+    Console.WriteLine(<span class="hljs-string">&quot;method two from super class&quot;</span>);  
+  }  
+}   
+  
+<span class="hljs-keyword">class</span> <span class="hljs-title">SubClass</span> : <span class="hljs-title">SuperClass</span>  
+{  
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">methodOne</span>(<span class="hljs-params"></span>)</span>  
+  {  
+    Console.WriteLine(<span class="hljs-string">&quot;method one from sub class&quot;</span>);  
+  }  
+  
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">void</span> <span class="hljs-title">methodTwo</span>(<span class="hljs-params"></span>)</span>  
+  {  
+    Console.WriteLine(<span class="hljs-string">&quot;method two from sub class&quot;</span>);  
+  }
+}   
+  
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>  
+{  
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>  
+  {  
+    SubClass subRef  = <span class="hljs-keyword">new</span> SubClass();  
+    SuperClass superRef = subRef;
+
+    subRef.methodOne();
+    subRef.methodTwo();  
+    
+    superRef.methodOne();  
+    superRef.methodTwo();  
+  }         
+}
+
+<span class="hljs-comment">// method one from sub class</span>
+<span class="hljs-comment">// method two from sub class</span>
+
+<span class="hljs-comment">// method one from super class</span>
+<span class="hljs-comment">// method two from sub class</span>
+</code></pre>
+<ul>
+<li><span style="color: rgba(0,0,0,0.1)">‘// method one from sub class, method two from sub class, method one from super class, method two from sub class’</span></li>
+</ul></li>
+</ul>
+
+<script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div id="commento"></div>
+</body>
+</html>

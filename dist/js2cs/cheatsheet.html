@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" sizes="8x8" href="data:image/x-icon;base64,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">
+  <meta charset="UTF-8">
+  <title>
+    cheatsheet
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/highlight.js/8.4.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/8.4.0/styles/googlecode.min.css">
+</head>
+<body>
+<h1>Cheatsheet</h1>
+<p>Getter setter</p>
+<pre><code class="language-c#"><span class="hljs-comment">// public get, private set, with default value </span>
+<span class="hljs-keyword">public</span> String content { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">private</span> <span class="hljs-keyword">set</span>; } = String.Empty;
+
+<span class="hljs-comment">// Variable lengh arguments</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> <span class="hljs-title">LinesOf</span>(<span class="hljs-params"><span class="hljs-keyword">params</span> <span class="hljs-keyword">string</span>[] str</span>)</span>
+{
+  <span class="hljs-keyword">return</span>  <span class="hljs-keyword">string</span>.Join(Environment.NewLine, str);
+}
+
+</code></pre>
+<p>Mocking</p>
+<pre><code class="language-c#"><span class="hljs-keyword">var</span> mock = <span class="hljs-keyword">new</span> Mock&lt;ICommand&gt;();
+
+<span class="hljs-comment">// For any input string</span>
+mock.Setup(
+  c =&gt; c.Execute(It.IsAny&lt;<span class="hljs-keyword">string</span>&gt;())
+).Returns(
+  (<span class="hljs-keyword">string</span> input) =&gt; input + <span class="hljs-string"><!--Contents-->quot;<span class="hljs-subst">{input}</span> executed&quot;</span>
+);
+</code></pre>
+<pre><code class="language-c#"><span class="hljs-comment">// Assert should throw exception</span>
+Assert.Throws&lt;CandBeDoneException&gt;(() =&gt; DoSomething());
+
+</code></pre>
+<pre><code class="language-c#"><span class="hljs-comment">// Null Coalecing with option chain</span>
+<span class="hljs-keyword">return</span> matchedCommand?.Execute(input) ?? <span class="hljs-string">&quot;no result&quot;</span>;
+
+<span class="hljs-comment">// Map and join values</span>
+String.Join(Environment.NewLine, commands.Select(c =&gt; c.Usage()))
+
+<span class="hljs-comment">// Check if aray contains</span>
+Children.Contains(person)
+</code></pre>
+<h3>regex</h3>
+<pre><code class="language-c#"><span class="hljs-comment">// Namespace for Regex classs</span>
+<span class="hljs-keyword">using</span> System.Text.RegularExpressions;
+
+<span class="hljs-comment">// Check if  a string matches a pattern</span>
+Regex regex = <span class="hljs-keyword">new</span> Regex(<span class="hljs-string">&quot;pattern&quot;</span>);
+regex.IsMatch(str);
+
+<span class="hljs-comment">// Named regex params</span>
+Regex pattern = <span class="hljs-keyword">new</span> Regex(<span class="hljs-string">&quot;(?i)caseIgnored(?-i)\\s*=\\s*(?&lt;valuename&gt;[a-z]+)&quot;</span>)
+Match match = pattern.Match(input);
+<span class="hljs-keyword">string</span> personId = match.Groups[<span class="hljs-string">&quot;personId&quot;</span>].Value;
+<span class="hljs-keyword">string</span> relation = match.Groups[<span class="hljs-string">&quot;relation&quot;</span>].Value;
+
+<span class="hljs-comment">// Replace regex</span>
+Regex.Replace(<span class="hljs-string">&quot;my name&quot;</span>, <span class="hljs-string">&quot;n..e&quot;</span>, <span class="hljs-string">&quot;identity&quot;</span>)
+</code></pre>
+<h3>Arrays</h3>
+<pre><code class="language-c#"><span class="hljs-comment">// Slicing array </span>
+array[fromIndex..toIndex]; <span class="hljs-comment">// excludes toIndex, includes fromIndex</span>
+
+<span class="hljs-comment">// Without first element </span>
+array[<span class="hljs-number">1.</span>..];
+
+<span class="hljs-comment">// map array</span>
+<span class="hljs-keyword">var</span> ages = people.Select(person =&gt; person.Age).ToArray();
+
+<span class="hljs-comment">// Reduce array</span>
+<span class="hljs-keyword">var</span> sumOfAges = people.Aggregate(<span class="hljs-number">0</span>, (sum, p) =&gt; sum + p.Age));
+
+<span class="hljs-comment">// Find in array</span>
+<span class="hljs-keyword">var</span> adults = people.Where(p =&gt; p.Age &gt; <span class="hljs-number">18</span>);
+
+<span class="hljs-comment">// First element (throws error if no elements)</span>
+<span class="hljs-keyword">var</span> first = people.First();
+
+<span class="hljs-comment">// First or default </span>
+<span class="hljs-keyword">var</span> firstOrNull = people.FirstOrDefault();
+
+<span class="hljs-comment">// Sort Array</span>
+<span class="hljs-keyword">var</span> sorted = people.OrderBy(p =&gt; p.Age);
+
+<span class="hljs-comment">// Concatenate arrays</span>
+<span class="hljs-keyword">var</span> mergedArray = arrayOne.Union(arrayTwo).ToArray();
+
+</code></pre>
+<h3>Collections</h3>
+<ul>
+<li><p>List</p>
+<pre><code class="language-c#"><span class="hljs-comment">// Create list intline </span>
+<span class="hljs-keyword">new</span> List&lt;Todo&gt;(){
+  <span class="hljs-keyword">new</span> Todo() {Id = <span class="hljs-number">1</span>, Name = <span class="hljs-string">&quot;item one&quot;</span>, IsComplete = <span class="hljs-literal">true</span>},
+  <span class="hljs-keyword">new</span> Todo() {Id = <span class="hljs-number">1</span>, Name = <span class="hljs-string">&quot;item one&quot;</span>, IsComplete = <span class="hljs-literal">true</span>}
+}
+
+<span class="hljs-comment">// Dictionaroies</span>
+<span class="hljs-keyword">var</span> days = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">string</span>&gt; { 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;mo&quot;</span></span>] =  <span class="hljs-string">&quot;Monday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;tu&quot;</span></span>] =  <span class="hljs-string">&quot;Tuesday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;we&quot;</span></span>] =  <span class="hljs-string">&quot;Wednesday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;th&quot;</span></span>] =  <span class="hljs-string">&quot;Thursday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;fr&quot;</span></span>] =  <span class="hljs-string">&quot;Friday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;sa&quot;</span></span>] =  <span class="hljs-string">&quot;Saturday&quot;</span>, 
+  [<span class="hljs-meta"><span class="hljs-meta-string">&quot;su&quot;</span></span>] =  <span class="hljs-string">&quot;Sunday&quot;</span>
+};
+
+<span class="hljs-comment">// Shorthand for arrays </span>
+Person [] array = {personOne};<span class="hljs-comment">// Same as var array = new Person[]{personOne};</span>
+
+
+</code></pre></li>
+</ul>
+<pre><code class="language-c#"><span class="hljs-comment">// Exceptions</span>
+
+<span class="hljs-comment">// Catch exceptoins without getting reference to object</span>
+<span class="hljs-keyword">try</span>{
+    <span class="hljs-comment">// ...</span>
+}Catch(PersonNotFoundException){ <span class="hljs-comment">// no reference to exception</span>
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<pre><code class="language-c#"><span class="hljs-comment">// do not need to declare private variable, directly assign in constructor</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">FindRelative</span> : <span class="hljs-title">ICommand</span>
+{
+  
+}
+</code></pre>
+<h3>Extensions</h3>
+<pre><code>//<span class="hljs-keyword">Add</span> an <span class="hljs-keyword">extension</span> <span class="hljs-keyword">method</span> <span class="hljs-keyword">to</span> an existing <span class="hljs-keyword">class</span>
+
+</code></pre>
+<p>Environment Variables</p>
+<pre><code class="language-c#"><span class="hljs-comment">// Get environmnt variable </span>
+Environment.GetEnvironmentVariable(<span class="hljs-string">&quot;PATH&quot;</span>);
+
+<span class="hljs-comment">// Ger processor count</span>
+Environment.ProcessorCount
+  
+<span class="hljs-comment">// Get os </span>
+Environment.OSVersion <span class="hljs-comment">// return &quot;Unix 19.3.0.0&quot; for catalina</span>
+</code></pre>
+<p>Typechekc and typecast</p>
+<pre><code class="language-c#"><span class="hljs-comment">// as operator</span>
+Person p = obj <span class="hljs-keyword">as</span> Person ; <span class="hljs-comment">// returns null if obj is not Person type</span>
+
+<span class="hljs-comment">// is operator with patttern matching</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Equals</span>(<span class="hljs-params"><span class="hljs-keyword">object</span>? obj</span>)</span>
+{
+  <span class="hljs-comment">// Checks type and assigns value</span>
+  <span class="hljs-keyword">if</span> (obj <span class="hljs-keyword">is</span> Person that)
+  {
+    <span class="hljs-keyword">return</span> that.Id == Id;
+  }
+
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+</code></pre>
+<p>File System</p>
+<pre><code class="language-c#"><span class="hljs-keyword">using</span> System.IO; 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">static</span> System.Console; 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">static</span> System.IO.Directory; 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">static</span> System.IO.Path; 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">static</span> System.Environment;
+
+<span class="hljs-comment">// Path separator </span>
+System.IO.Path.DirectorySeparatorChar;
+
+<span class="hljs-comment">// Get User home</span>
+System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+
+<span class="hljs-comment">// Get Temp directory</span>
+System.IO.Path.GetTempPath();
+  
+<span class="hljs-comment">// Get current directory</span>
+System.Environment.CurrentDirectory
+
+<span class="hljs-comment">// Combile path</span>
+Console.WriteLine(Path.Combine(homePath, <span class="hljs-string">&quot;Dir&quot;</span>, <span class="hljs-string">&quot;SubDir&quot;</span>, <span class="hljs-string">&quot;myFile&quot;</span>));
+
+<span class="hljs-comment">// Check directory exists </span>
+Directory.Exists(path);
+
+<span class="hljs-comment">// Check file exists (returns fale if path is directory)</span>
+File.Exists(path);
+
+<span class="hljs-comment">// Get directory container a file </span>
+Path.GetDirectoryName(filePath);
+
+<span class="hljs-comment">// Get file name</span>
+Path.GetFileName(filePath);
+
+
+</code></pre>
+<p>Reading a file</p>
+<pre><code class="language-c#"><span class="hljs-comment">// Read text file by line</span>
+<span class="hljs-keyword">using</span> (System.IO.StreamReader file =
+       <span class="hljs-keyword">new</span> System.IO.StreamReader(filePath))
+{
+  <span class="hljs-keyword">string</span> line;
+  <span class="hljs-keyword">while</span>((line = file.ReadLine()) != <span class="hljs-literal">null</span>)  
+  {
+    Console.WriteLine(line);
+  }  
+}
+</code></pre>
+<pre><code class="language-c#"><span class="hljs-comment">// Async code</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">async</span> Task <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>
+{
+  Console.WriteLine(<span class="hljs-string">&quot;before task&quot;</span>);
+  <span class="hljs-keyword">var</span> task = Task.Run(() =&gt;{
+    Console.WriteLine(<span class="hljs-string">&quot;In the task&quot;</span>);
+  });
+  <span class="hljs-keyword">await</span> task;
+  Console.WriteLine(<span class="hljs-string">&quot;after task&quot;</span>);
+}
+</code></pre>
+<p>Writting to a file</p>
+<pre><code>
+</code></pre>
+<h3>JSON</h3>
+<pre><code># Best <span class="hljs-type">json</span> API : Newtonsoft.Json
+# <span class="hljs-type">JSON</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">dictionary</span> : 
+
+</code></pre>
+<h3>Build</h3>
+<pre><code class="language-xml"><span class="hljs-comment">&lt;!-- Copy files static/file.json to bin/Debug/static/file.json --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ItemGroup</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">Content</span> <span class="hljs-attr">Include</span>=<span class="hljs-string">&quot;static/**&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">CopyToOutputDirectory</span>&gt;</span>PreserveNewest<span class="hljs-tag">&lt;/<span class="hljs-name">CopyToOutputDirectory</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Content</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ItemGroup</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Create empty static/ folder to bin/Debug/ if no files in static--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">Target</span> <span class="hljs-attr">Name</span>=<span class="hljs-string">&quot;CreateAppDataFolder&quot;</span> <span class="hljs-attr">AfterTargets</span>=<span class="hljs-string">&quot;AfterPublish&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">MakeDir</span> <span class="hljs-attr">Directories</span>=<span class="hljs-string">&quot;$(PublishDir)AppData&quot;</span> <span class="hljs-attr">Condition</span>=<span class="hljs-string">&quot;!Exists(&#x27;$(PublishDir)AppData&#x27;)&quot;</span> /&gt;</span> 
+<span class="hljs-tag">&lt;/<span class="hljs-name">Target</span>&gt;</span>
+
+
+</code></pre>
+<h3>Install nuget locally</h3>
+<pre><code class="language-bash"><span class="hljs-comment">#On Linux, with NuGet CLI, the commands are similar. To install my.nupkg, run</span>
+nuget add -Source some/directory my.nupkg
+nuget add -Source some/directory my.nupkg
+
+<span class="hljs-comment"># add that directory as a NuGet source</span>
+sources Add -Name MySource -Source some/directory
+
+<span class="hljs-comment">#/p:RestoreSources=MySource</span>
+dotnet build /p:RestoreSources=MySource
+</code></pre>
+<p>Commands</p>
+<table>
+<thead>
+<tr><th></th><th></th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>add package</td><td><code>dotnet add package &lt;name&gt;</code></td><td></td></tr>
+<tr><td>add package</td><td><code>dotnet add &lt;projec/path&gt;.csproj package &lt;name&gt;</code></td><td></td></tr>
+<tr><td>Create solution file</td><td><code>dotnet new sln -0 solution-name</code></td><td></td></tr>
+<tr><td>Create class lib</td><td><code>dotnet new classlib -o LibName</code></td><td></td></tr>
+<tr><td>Add proejct to solution</td><td><code>dotnet sln add ./project/project.csproj</code></td><td></td></tr>
+<tr><td>Add reference proj as dependency to another csproj</td><td><code>dotnet add &lt;current&gt;.csproj reference path/to/&lt;other&gt;.csproj</code></td><td></td></tr>
+<tr><td>List packages and target version</td><td><code>dotnet list . package</code></td><td></td></tr>
+<tr><td>List referenced projects</td><td><code>dotnet list . reference</code></td><td></td></tr>
+<tr><td>Remove reference or Nuget</td><td><code>donet remove</code></td><td></td></tr>
+<tr><td>download dependencies of the project</td><td><code>dotnet restore</code></td><td></td></tr>
+<tr><td>compile the project</td><td><code>dotnet build</code></td><td></td></tr>
+<tr><td>run unit tests</td><td><code>dotnet test</code></td><td></td></tr>
+<tr><td>Run the project</td><td>dotnet run</td><td></td></tr>
+<tr><td>Create nuget package for project</td><td>dotnet pack</td><td></td></tr>
+<tr><td>publish to nuget repo</td><td>dotnet publish</td><td></td></tr>
+<tr><td>create publish directory with built assets</td><td><code>dotnet publish -c Release -o ./publish</code></td><td></td></tr>
+<tr><td>clear local nugets (sometimes to fix errors)</td><td>dotnet nuget locals all -c</td><td></td></tr>
+<tr><td>run single test</td><td>dotnet test --filter DisplayName=<namespace>.<testfile>.<methodname></td><td></td></tr>
+<tr><td>view current version</td><td>dotnet --version</td><td></td></tr>
+<tr><td>view available versions locally</td><td>dotnet --info</td><td></td></tr>
+<tr><td>set sdk core version</td><td>dotnet new globaljson --sdk-version 3.1.401</td><td></td></tr>
+</tbody>
+</table>
+
+<script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div id="commento"></div>
+</body>
+</html>
